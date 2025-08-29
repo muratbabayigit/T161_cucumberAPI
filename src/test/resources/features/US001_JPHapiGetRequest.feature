@@ -18,5 +18,25 @@ Feature: US001_JPH API GET REQUEST
     * kullanici response degerini jsonpath olarak kaydeder
     * kullanici response "title" degerinin "optio dolor molestias sit" oldugunu test eder
 
+#    https://jsonplaceholder.typicode.com/posts/70 url'ine asagidaki body’e sahip bir
+#    POST request yolladigimizda donen response’in
+#    status kodunun 200, content type’inin “application/json; charset=utf-8”,
+#    Connection header degerinin “keep-alive”
+#    ve response body’sinin asagida verilen ile ayni oldugunu test ediniz
+
+#   Request Body                      Expected Data :
+#   {                                     {
+#    "title": "Ahmet",                      "title": "Ahmet",
+#    "body": "Merhaba",                     "body": "Merhaba",
+#    "userId": 10,                          "userId": 10,
+#    "id": 70                               "id": 70
+#   }                                     }
+
+  Scenario: JPH PUT Request yapma
+
+    * kullanici "JPHBaseUrl" adresine gider
+    * kullanici path parametresi olarak "posts/70" girer
+    * kullanici PUT request yapabilmek için "Ahmet","Merhaba",10 70 bilgileri ile reqBody olusturur
+
 
 
