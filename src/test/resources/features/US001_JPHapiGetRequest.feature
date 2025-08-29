@@ -36,7 +36,17 @@ Feature: US001_JPH API GET REQUEST
 
     * kullanici "JPHBaseUrl" adresine gider
     * kullanici path parametresi olarak "posts/70" girer
-    * kullanici PUT request yapabilmek için "Ahmet","Merhaba",10 70 bilgileri ile reqBody olusturur
+    * kullanici PUT request yapabilmek için "Ahmet","Merhaba" , 10 70 bilgileri ile reqBody olusturur
+    * kullanici PUT request yaparak response bilgilerini kaydeder
+    * kullanici response statusCode degerinin 200 oldugunu test eder
+    * kullanici content type degerinin "application/json; charset=utf-8" oldugunu test eder
+    * kullanici "Connection" header dergerinin "keep-alive" oldugunu test eder
+    * kullanici response degerini jsonpath olarak kaydeder
+    * kullanici response id degerinin 70 oldugunu test eder
+    * kullanici response userId degerinin 10 oldugunu test eder
+    * kullanici response "title" degerinin "Ahmet" oldugunu test eder
+    * kullanici response "body" degerinin "Merhaba" oldugunu test eder
+
 
 
 
